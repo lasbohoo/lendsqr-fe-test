@@ -1,0 +1,251 @@
+
+
+
+.nav-container{
+    position: fixed;
+    top: 0;
+    left:0rem;
+    right:0rem;
+    display: flex;
+    padding: 24px 112px;
+    align-items:center;
+    background: #FFFFFF;
+    height:  50px;
+
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:1rem
+}
+
+.lendsqr{
+    width: 138.44px;
+    height: 36px;
+    font-size: 30px;
+    color: #213F7D;
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 75%;
+}
+
+
+.search-bar{
+    position: absolute;
+    color:#1C1B1F;
+    display:flex;
+    align-Items:center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    max-width:400px;
+    width:100%;
+    
+}
+
+.search-bar > input{
+    flex:1;
+    background: transparent;
+    border: 1px solid #213F7D;
+    border-radius: 8px;
+    height: 40px;
+    width: 400px;
+    left: 343px;
+    top: 30px;
+    font-size: 20px;
+
+}
+
+::placeholder{
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 1rem;
+    /* identical to box height */
+
+
+    color: #525e7f;
+
+    opacity: 0.6;
+}
+
+.search-bar > button > img {
+    height: 14px;
+    width: 13.971688270568848px;
+    left: 708px;
+    top: 43px;
+    border-radius: 0px;
+}
+
+.search-bar > button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 56px;
+    margin-left: 78%;
+    border: none;
+    border-radius: 0  8px 8px 0;
+    background: #39CDCC;
+    cursor: pointer;
+    transform: translate(0, 0%);
+}
+
+
+.notification{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 700px;
+}
+
+.docs{
+    position: absolute;
+    top: 44%;
+    bottom: 37%;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #213F7D;
+}
+
+
+.notification > img{
+    position: absolute;
+    margin-left: 100px;
+}
+
+.notify {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 9rem;
+    gap: 1rem;
+    padding: 5px;
+}
+
+.notify > img{
+    height: 4.148512840270996px;
+    width: 7.335150241851807px;
+    left: 6.3330078125px;
+    top: 8.181995391845703px;
+    border-radius: 0px;
+
+
+    color: #213F7D;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 1315px) {
+    .logo{
+        display: flex;
+        top: 15px;
+        left:35px;
+        position: absolute;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #e0cf0d;
+        left: 0;
+        top:75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    
+
+    .search-bar,
+    .notification{
+        color: #1C1B1F;
+        align-items: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color:blue;
+        background-color: #1C1B1F;
+        outline: none;
+        top:15px;
+        right: 25px;
+        cursor: pointer;
+
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .logo{
+        display: flex;
+        top: 15px;
+        left:'35px'
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #e0cf0d;
+        left: 0;
+        top:75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+
+    .search-bar,
+    .notification{
+        color: #1C1B1F;
+        align-items: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color:blue;
+        background-color: #1C1B1F;
+        outline: none;
+        top:15px;
+        right: 25px;
+
+    }
+}

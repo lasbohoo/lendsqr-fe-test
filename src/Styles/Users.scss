@@ -1,0 +1,62 @@
+
+.main-container{  
+    width: 80%;
+    // background: #E5E5E5;
+    margin-top: 5.7rem;
+}
+
+.wrapper > span{
+    
+    padding: 2rem;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #213F7D;
+    
+
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    padding: 7rem;
+    gap: 2rem;
+    margin-left: -6rem;
+    width: 1037px;
+}
+
+.wrapper{
+    padding: 5rem;
+}
+
+
+  .tb {
+    &.MuiTable-root{
+        margin-left:1rem;
+        width: 1037px;
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 63, 125, 0.06);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        gap: 1rem;
+    }
+     
+  }
+
+  .th{
+    &.MuiTableHead-root {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        display:table-header-group;
+        text-transform: uppercase;
+
+        // color: #545F7D;
+  }
+}

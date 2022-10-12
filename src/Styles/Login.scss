@@ -1,0 +1,188 @@
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper-logo{
+    width: 50%;
+    background: #FFFFFF
+    
+}
+
+.login-container{
+    width: 50%;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    // position: absolute;
+}
+
+.logo{
+    width: 90px;
+    justify-items: baseline;
+    display: flex;
+    margin-top: 7rem;
+    margin-left: 7rem;
+}
+
+.logo.img{
+    width: 24.75px;
+    height: 25px;
+    left: 97px;
+    top: 107.67px;
+}
+
+.text{
+    width: 138.44px;
+    height: 36px;
+    font-size: 30px;
+    color: #213F7D;
+}
+
+.logo-img{
+    position: absolute;
+    width: 600px;
+    height: 337.57px;
+    left: 67px;
+    top: 281px;
+
+}
+
+.welcome{
+    position: absolute;
+    width: 183px;
+    height: 55px;
+    left: 836px;
+    top: 215px;
+
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    /* identical to box height */
+
+    letter-spacing: -0.04em;
+
+    color: #213F7D;
+}
+
+.welcome > span{
+
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #545F7D;
+}
+
+input{
+    box-sizing: border-box;
+    width: 447px;
+    height: 50px;
+    left: 836px;
+    top: 368px;
+
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+}
+
+::placeholder{
+
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 1rem;
+    /* identical to box height */
+
+
+    color: #545F7D;
+
+    opacity: 0.6;
+}
+
+.forgot-p{
+    margin-top: 2rem;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #39CDCC;
+
+}
+
+.btn{
+    left: 58.06%;
+    right: 10.9%;
+    top: 62.56%;
+    bottom: 32.11%;
+
+    background: #39CDCC;
+    border-radius: 8px;
+    width: 447px;
+    height: 48px;
+    border: none;
+}
+
+.btn > span{
+    left: 71.67%;
+    right: 24.37%;
+    top: 64.22%;
+    bottom: 33.56%;
+
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    /* 6 */
+
+    color: #FFFFFF;
+
+}
+
+form{
+    position: relative;
+}
+form > span{
+    position: absolute;
+    width: 49.41px;
+    height: 12.5px;
+    left: 370px;
+    top: 95px;
+    // margin-left: 100%;
+    transform: translate(0, -50%);
+
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #39CDCC;
+    cursor: pointer;
+}
