@@ -82,27 +82,12 @@
     color: #213F7D !important;
 }
 
-.sideBar{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
 
-.menu-bar{
-    margin-left:2rem;
-    font-size: 2rem;
-    background: none;
-}
 
 .side-menu{
     display: flex;
     justify-content: center;
     left:-100%
-}
-
-.side-menu.active{
-    left: 0;
-    transition: 350ms;
 }
 
 .nav-text{
@@ -135,16 +120,6 @@
 
 .side-menu-items{
     width: 100%;
-}
-
-.sidebar-toggle{
-    background-color: #213F7D;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
 }
 
 span{
