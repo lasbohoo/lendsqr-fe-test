@@ -2,7 +2,7 @@ import { ArrowBack, ProfilePic, FilledStar, OutlinedStar } from '../assets';
 import { Stack, Box, Typography,Tabs, Tab  } from '@mui/material'
 import React from 'react'
 import { Navbar, SideBar, UserInfo } from '../components'
-import '../Styles/UserDetails.scss'
+import '../styles/UserDetails.scss'
 
 
 

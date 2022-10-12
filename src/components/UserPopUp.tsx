@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/UserPopUp.scss'
+import '../styles/UserPopUp.scss'
 import { Stack, List, ListItem, } from '@mui/material'
 import { MORE } from "../testdata";
 

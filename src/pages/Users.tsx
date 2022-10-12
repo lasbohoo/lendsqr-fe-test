@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, SideBar, UserCards, Filter, UserPopUp } from '../components'
-import '../Styles/Users.scss'
+import '../styles/Users.scss'
 import { Stack } from '@mui/material'
 import { Table, TableBody, TableCell, Typography, TableHead, TableRow, Popover, TablePagination, Grid } from '@mui/material'
 import { tableCellClasses } from '@mui/material/TableCell';

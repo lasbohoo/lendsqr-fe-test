@@ -2,14 +2,9 @@ import React from 'react'
 import { AllUsers, ActiveUsers, LoanUsers, SavingUsers } from '../assets'
 
 
-import '../Styles/UserCards.scss'
+import '../styles/UserCards.scss'
 
 
-// interface CardProps {
-//     name: string
-//     icon?: string
-//     amount?: number
-// };
 
 const UserCards:React.FC = () => {
   return (
