@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Users.scss';
+import styles from '../styles/users.module.scss';
 
 import { Navbar, SideBar, UserCards, Filter, UserPopUp } from '../components';
 
@@ -113,15 +113,15 @@ const Users:React.FC = () => {
          
             <SideBar />
         
-          <div className='main-container'>
-              <div className='wrapper'>
+          <div className={styles.mainContainer}>
+              <div className={styles.wrapper}>
                 <span>User</span>
-                <div className='box'>
+                <div className={styles.box}>
                   <UserCards />
                 </div>
 
-                <Table aria-label="collapsible table" className='tb'>
-                  <TableHead className='th'>
+                <Table aria-label="collapsible table" className={styles.tb}>
+                  <TableHead className={styles.th}>
                     <TableRow>
                     {HEADER?.map((header:any, index:any) => (
                       <StyledTableCell key={index}>

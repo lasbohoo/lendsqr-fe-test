@@ -1,11 +1,9 @@
-.side-bar{
+.sidebar{
 
     background: #FFFFFF;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
-    width: 100%;
-    z-index: 1;
+    width: 283px;
     top: 0;
-    left: -100%;
     background-color: #FFFFFF;
     padding-top: 16px;
     margin-top: 5.7rem;
@@ -14,7 +12,7 @@
 
 }
 
-.side-bar > span{
+.sidebar > span{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -22,7 +20,7 @@
     padding: 2rem;
 }
 
-.side-bar > span > h3 {
+.sidebar > span > h3 {
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
@@ -33,7 +31,7 @@
 
 }
 
-.side-bar > span > img{
+.sidebar > span > img{
     height: 11.21043586730957px;
     width: 6.567902088165283px;
     left: 12.5958251953125px;
@@ -52,7 +50,7 @@
 
 }
 
-.side-bar > .dash{
+.sidebar > .dash{
     height: 9.291369438171387px;
     width: 10.666666030883789px;
     left: 2.6666259765625px;
@@ -62,35 +60,17 @@
     
 }
 
-.text-item{
-    width: 87px;
-    height: 19px;
-    left: 56px;
-    top: 354px;
-
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    color: #213F7D;
-
-}
-
-.icon-item{
-    color: #213F7D !important;
-}
 
 
 
-.side-menu{
+
+.sideMenu{
     display: flex;
     justify-content: center;
     left:-100%
 }
 
-.nav-text{
+.navText{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -99,7 +79,7 @@
     height: 60px;
 }
 
-.nav-text a{
+.navText >.a{
     text-decoration: none;
     color: #213F7D;
     font-size: 18px;
@@ -112,13 +92,13 @@
     border-radius: 4px;
 }
 
-.nav-text a:hover{
+.navText > .a:hover{
     background-color: #39CDCC;
     border-right: 2px solid #39CDCC;
     color: #213F7D;
 }
 
-.side-menu-items{
+.sideMenuItems{
     width: 100%;
 }
 

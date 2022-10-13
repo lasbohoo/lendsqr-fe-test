@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Filter.scss';
+import styles from '../styles/filter.module.scss';
 
 import { Box,InputLabel,MenuItem,FormControl,Stack }from '@mui/material';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
@@ -17,9 +17,9 @@ const Filter:React.FC = () => {
     };
   return (
     <>
-        <form className='container'>
+        <form className={styles.container}>
             
-            <FormControl sx={{ minWidth: 200 }} className='select'>
+            <FormControl sx={{ minWidth: 200 }} className={styles.select}>
                 <InputLabel id="demo-simple-select-label">organization</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
@@ -33,23 +33,23 @@ const Filter:React.FC = () => {
                 <MenuItem value={30}>Thirty</MenuItem>
                 </Select>
             </FormControl>
-            <div className='input'>
+            <div className={styles.input}>
                 <label>User</label>
                 <input type='text' placeholder='User' name='q'/>
             </div>
-            <div className='input'>
+            <div className={styles.input}>
                 <label>Email</label>
                 <input type='text' placeholder='Email' name='q'/>
             </div>
-            <div className='input'>
+            <div className={styles.input}>
                 <label>Date</label>
                 <input type='text' placeholder='Date' name='q'/>
             </div>
-            <div className='input'>
+            <div className={styles.input}>
                 <label>Phone Number</label>
                 <input type='text' placeholder='Date' name='q'/>
             </div>
-            <FormControl sx={{ minWidth: 200 }} className='select'>
+            <FormControl sx={{ minWidth: 200 }} className={styles.select}>
                 <InputLabel id="demo-simple-select-label">status</InputLabel>
                 <Select
                 labelId="demo-simple-select-label"
@@ -66,8 +66,8 @@ const Filter:React.FC = () => {
             </FormControl>
             <Box>
                 <Stack direction="row" spacing={2}>
-                    <button className='resetBtn'>Reset</button>
-                    <button className='filterBtn'>Filter</button>
+                    <button className={styles.resetBtn}>Reset</button>
+                    <button className={styles.filterBtn}>Filter</button>
                 </Stack>
             </Box>
         </form>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/UserPopUp.scss';
+import styles from '../styles/userPopUp.module.scss';
 
 import { Stack } from '@mui/material';
 import { MORE } from "../testdata";
@@ -7,14 +7,14 @@ import { MORE } from "../testdata";
 
 const UserPopUp:React.FC = () => {
   return (
-    <div className='view-container'>
-        <Stack className='view-box'>
+    <div className={styles.viewContainer}>
+        <Stack className={styles.viewBox}>
         {MORE?.map((more:any, index:any) => (
-            <div className='paper' key={index}>
-                <span className='icon'>
+            <div className={styles.paper} key={index}>
+                <span className={styles.icon}>
                     {more.icon} 
                 </span>
-                <span className='text'>
+                <span className={styles.text}>
                     {more.text} 
                 </span>             
             </div>

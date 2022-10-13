@@ -5,13 +5,13 @@
     height: 100vh;
 }
 
-.wrapper-logo{
+.wrapperLogo{
     width: 50%;
     background: #FFFFFF
     
 }
 
-.login-container{
+.loginContainer{
     width: 50%;
     color: #FFFFFF;
     justify-content: center;
@@ -28,7 +28,7 @@
     margin-left: 7rem;
 }
 
-.logo.img{
+.logoImg{
     width: 24.75px;
     height: 25px;
     left: 97px;
@@ -42,7 +42,7 @@
     color: #213F7D;
 }
 
-.logo-img{
+.logoImg{
     position: absolute;
     width: 600px;
     height: 337.57px;
@@ -111,7 +111,7 @@ input{
     opacity: 0.6;
 }
 
-.forgot-p{
+.forgotP{
     margin-top: 2rem;
     font-family: Avenir Next;
     font-style: normal;

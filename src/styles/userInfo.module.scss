@@ -10,21 +10,21 @@ span{
     color: #213F7D;
 }
 
-.personal-info{
+.personalInfo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
 }
 
-.personal-info2{
+.personalInfo2{
     display: flex;
     flex-direction: row;
     gap: 9rem;
    
 }
 
-.personal-info > div > h5{
+.personalInfo > div > h5{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
@@ -36,7 +36,7 @@ span{
     color: #545F7D;
 }
 
-.personal-info > div > h6{
+.personalInfo > div > h6{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;
@@ -49,7 +49,7 @@ span{
       
 }
 
-.personal-info2 > div > h5{
+.personalInfo2 > div > h5{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
@@ -62,7 +62,7 @@ span{
     color: #545F7D;
 }
 
-.personal-info2 > div > h6{
+.personalInfo2 > div > h6{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;

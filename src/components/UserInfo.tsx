@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/UserInfo.scss';
+import styles from '../styles/userInfo.module.scss';
 
 import { Stack, Divider  } from '@mui/material';
 
@@ -8,7 +8,7 @@ const UserInfo:React.FC = () => {
     <Stack style={{ gap:'2rem', padding: '5px 10px 15px 20px' }}>
       <div  style={{ display:'flex', flexDirection:'column' }}>
         <span>Personal Information</span>
-        <div className='personal-info'>
+        <div className={styles.personalInfo}>
           <div>
             <h5>full Name</h5>
             <h6>Grace Effiom</h6>
@@ -30,7 +30,7 @@ const UserInfo:React.FC = () => {
             <h6>Female</h6>
           </div>
         </div>
-        <div className='personal-info2'>
+        <div className={styles.personalInfo2}>
           <div>
             <h5>Marital status</h5>
             <h6>Single</h6>
@@ -48,7 +48,7 @@ const UserInfo:React.FC = () => {
       <Divider/>
       <div style={{ display:'flex', flexDirection:'column' }}>
         <span>Education and Employment</span>
-        <div className='personal-info'>
+        <div className={styles.personalInfo}>
           <div>
             <h5>level of education</h5>
             <h6>B.Sc</h6>
@@ -66,7 +66,7 @@ const UserInfo:React.FC = () => {
             <h6>2 years</h6>
           </div>
         </div>
-        <div className='personal-info2'>
+        <div className={styles.personalInfo2}>
           <div>
             <h5>office email</h5>
             <h6>grace@lendsqr.com</h6>
@@ -84,7 +84,7 @@ const UserInfo:React.FC = () => {
       <Divider/>
       <div style={{ display:'flex', flexDirection:'column' }}>
         <span>Socials</span>
-        <div className='personal-info2'>
+        <div className={styles.personalInfo2}>
           <div>
             <h5>Twitter</h5>
             <h6>@grace_effiom</h6>
@@ -102,7 +102,7 @@ const UserInfo:React.FC = () => {
       <Divider/>
       <div style={{ display:'flex', flexDirection:'column' }}>
         <span>Guarantor</span>
-        <div className='personal-info2'>
+        <div className={styles.personalInfo2}>
           <div>
             <h5>full Name</h5>
             <h6>Debby Ogana</h6>
@@ -123,7 +123,7 @@ const UserInfo:React.FC = () => {
       </div>
       <Divider/>
       <div style={{ display:'flex', flexDirection:'column' }}>
-      <div className='personal-info2'>
+      <div className={styles.personalInfo2}>
           <div>
             <h5>full Name</h5>
             <h6>Debby Ogana</h6>

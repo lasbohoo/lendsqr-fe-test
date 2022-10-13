@@ -20,59 +20,61 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 
 import { Circles,Fees,Service,Active,View,Blacklist } from '../src/assets';
 
+import styles from './styles/sidebar.module.scss'
+
 
 
 export const CUSTOMERS = [
     {
         name:'Users',
         image:<GroupIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'       
     },
 
     {
         name:'Guarantors',
         image:<GroupsIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'       
     },
 
     {
         name:'Loans',
         image:<img src={Circles}/>, 
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'      
     },
 
     {
         name:'Decision Models',
         image:<HandshakeOutlinedIcon/>,   
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'    
     },
 
     {
         name:'Savings',
         image:<SavingsOutlinedIcon/>,   
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'    
     },
     {
         name:'Loan Requests',
         image:<VolunteerActivismIcon/>,  
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'    
     },
     {
         name:'Whitelist',
         image:<GroupAddIcon/>,  
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'     
     },
     {
         name:'Karma',
         image:<PersonRemoveIcon/>,  
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'     
     },
 
@@ -82,62 +84,63 @@ export const BUSINESSES = [
     {
         name:'Organization',
         image:<BusinessCenterIcon />,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
     {
         name:'Loan Products',
         image:<VolunteerActivismIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
     {
         name:'Savings Products',
         image:<SavingsOutlinedIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
     {
         name:'Fees and Charges',
         image:<img src={Fees}/>,
-        cName: 'nav-text'
+        cName: `${styles.navText}`,
+        path:'#'
 
     },
     {
         name:'Transactions',
         image:<AccountBalanceWalletOutlinedIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
     {
         name:'Services',
         image:<img src={Service}/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
     {
         name:'Service Account',
         image:<ManageAccountsIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
     {
         name:'Settlements',
         image:<ReceiptLongIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
     {
         name:'Reports',
         image:<SignalCellularAltIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
@@ -147,20 +150,20 @@ export const SETTINGS = [
     {
         name:'Preferences',
         image:<TuneOutlinedIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },
     {
         name:'Fees and Pricing',
         image:<PercentOutlinedIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
     },
     {
         name:'Audit Logs',
         image:<AssignmentIcon/>,
-        cName: 'nav-text',
+        cName: `${styles.navText}`,
         path:'#'
 
     },

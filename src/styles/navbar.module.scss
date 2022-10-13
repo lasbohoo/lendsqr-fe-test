@@ -1,7 +1,7 @@
 
 
 
-.nav-container{
+.navContainer{
     position: fixed;
     top: 0;
     left:0rem;
@@ -28,14 +28,14 @@
     text-decoration: none;
 }
 
-.nav-links{
+.navLinks{
     display: flex;
     list-style: none;
     width: 75%;
 }
 
 
-.search-bar{
+.searchBar{
     position: absolute;
     color:#1C1B1F;
     display:flex;
@@ -47,7 +47,7 @@
     
 }
 
-.search-bar > input{
+.searchBar > input{
     flex:1;
     background: transparent;
     border: 1px solid #213F7D;
@@ -75,7 +75,7 @@
     opacity: 0.6;
 }
 
-.search-bar > button > img {
+.searchBar > button > img {
     height: 14px;
     width: 13.971688270568848px;
     left: 708px;
@@ -83,7 +83,7 @@
     border-radius: 0px;
 }
 
-.search-bar > button{
+.searchBar > button{
     position: absolute;
     display: flex;
     align-items: center;
@@ -153,7 +153,7 @@
     color: #213F7D;
 }
 
-.mobile-menu-icon{
+.mobileMenuIcon{
     display: none;
 }
 
@@ -165,11 +165,11 @@
         position: absolute;
     }
 
-    .nav-links{
+    .navLinks{
         display: none;
     }
 
-    .nav-links-mobile{
+    .navLinksMobile{
         position: absolute;
         display: block;
         list-style: none;
@@ -181,7 +181,7 @@
     }
     
 
-    .search-bar,
+    .searchBar,
     .notification{
         color: #1C1B1F;
         align-items: center;
@@ -190,7 +190,7 @@
         transition: all 0.5s ease;
     }
 
-    .mobile-menu-icon{
+    .mobileMenuIcon{
         display: block;
         position: absolute;
         font-size: 30px;
@@ -211,12 +211,12 @@
         left:'35px'
     }
 
-    .nav-links{
+    .navLinks{
         display: none;
     }
 
     
-    .nav-links-mobile{
+    .navLinksMobile{
         position: absolute;
         display: block;
         list-style: none;
@@ -227,7 +227,7 @@
         width: 100%;
     }
 
-    .search-bar,
+    .searchBar,
     .notification{
         color: #1C1B1F;
         align-items: center;
@@ -237,7 +237,7 @@
     }
 
 
-    .mobile-menu-icon{
+    .mobileMenuIcon{
         display: block;
         position: absolute;
         font-size: 30px;

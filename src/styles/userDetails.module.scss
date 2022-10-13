@@ -1,5 +1,5 @@
 
-.main-container{  
+.mainContainer{  
     width: 80%;
     background: #E5E5E5;
     margin-top: 5.7rem;
@@ -44,7 +44,7 @@
     
 }
 
-.btn-wrapper{
+.btnWrapper{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +117,7 @@
     border-radius: 4px;
 }
 
-.sub-header{
+.subHeader{
     margin-right: 20rem;
     display: flex;
     flex-direction: row;
@@ -152,7 +152,7 @@
     color: #545F7D;
 }
 
-.user-tier{
+.userTier{
     border-left: 1px solid #545F7D;
     border-right: 1px solid #545F7D;
     width: 80px;
@@ -163,7 +163,7 @@
     justify-content: space-around;
 }
 
-.user-tier > div > h6{
+.userTier > div > h6{
     
     font-family: 'Work Sans';
     font-style: normal;
@@ -199,6 +199,6 @@
 
 }
 
-.main-header{
+.mainHeader{
     height:19px;
 }

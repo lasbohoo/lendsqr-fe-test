@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/UserDetails.scss';
+import styles from '../styles/userDetails.module.scss';
 
 import { ArrowBack, ProfilePic, FilledStar, OutlinedStar } from '../assets';
 import { Stack, Box, Typography,Tabs, Tab  } from '@mui/material';
@@ -61,32 +61,32 @@ const UserDetails:React.FC = () => {
     <>
         <Navbar />
         <Stack direction='row' style={{ background:'#E5E5E5', width:'100%', display:'flex', flexDirection:'row' }}>
-            <div className='sidebar'>
+            <div className={styles.sidebar}>
                 <SideBar/>
             </div>
-            <div className='main-container'>
-                <div className='wrapper'>
+            <div className={styles.mainContainer}>
+                <div className={styles.wrapper}>
                     <i><img src={ArrowBack} alt='back' /></i><span>Back to Users</span>
                     <Stack direction='row' style={{ justifyContent:'space-between', width:'1037px' }}>
                         <h4>User Details</h4>
-                        <div className='btn-wrapper'>
-                            <button className='blacklistBtn'>
+                        <div className={styles.btnWrapper}>
+                            <button className={styles.blacklistBtn}>
                                 <span>Blacklist User</span>
                             </button>
-                            <button className='activateBtn'>
+                            <button className={styles.activateBtn}>
                                <span>Activate User</span> 
                             </button>
                         </div>   
                     </Stack>
-                    <Stack direction='column' className='main-header'>
-                        <Stack direction='row' className='header'>
-                            <div className='sub-header'>
+                    <Stack direction='column' className={styles.mainHeader}>
+                        <Stack direction='row' className={styles.header}>
+                            <div className={styles.subHeader}>
                                 <i><img src={ProfilePic} alt='avatar' /></i>
-                                <div className='profileName'>
+                                <div className={styles.profileName}>
                                     <h3>Grace Effiom</h3>
                                     <h6>LSQFf587g90</h6>
                                 </div>
-                                <div className='user-tier'>
+                                <div className={styles.userTier}>
                                     <div style={{ marginBottom:'18px' }}>
                                         <h6>User’s Tier</h6>
                                         <Stack direction='row'>
@@ -96,7 +96,7 @@ const UserDetails:React.FC = () => {
                                         </Stack>
                                     </div>    
                                 </div>
-                                <div className='userAmount'>
+                                <div className={styles.userAmount}>
                                     <h3>₦200,000.00</h3>
                                     <h6>9912345678/Providus Bank </h6>
                                 </div>

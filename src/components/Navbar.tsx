@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Navbar.scss';
+import styles from '../styles/navbar.module.scss';
 
 import { Union, Search, Info, Image, ArrowDown } from '../assets';
 import { Avatar } from '@mui/material';
@@ -13,16 +13,16 @@ const Navbar:React.FC = () => {
 
     const [isMobile, setIsMobile] = useState<boolean>(false)
   return (
-    <nav className='nav-container'>
-        <div className='logo'>
+    <nav className={styles.navContainer}>
+        <div className={styles.logo}>
             <img src={Union} alt='logo' />
-            <Link to='/' className='lendsqr'>Lendsqr</Link>
+            <Link to='/' className={styles.lendsqr}>Lendsqr</Link>
         </div>
-        <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
+        <ul className={isMobile ? `${styles.navLinksMobile}` : `${styles.navLinks}`}
         onClick={() => setIsMobile(false)}
         >
             <li>
-                <form className='search-bar'>
+                <form className={styles.searchBar}>
                     <input  type='text' placeholder='search for anything' name='q' />
                     <button type='submit'>
                         <img src={Search} alt='search' />
@@ -31,10 +31,10 @@ const Navbar:React.FC = () => {
             </li>
             
             <li>
-                <div className='notification'>
-                    <span className='docs'>Docs</span>
+                <div className={styles.notification}>
+                    <span className={styles.docs}>Docs</span>
                     <img src={Info} alt='info' />
-                    <div className='notify'>
+                    <div className={styles.notify}>
                         <Avatar src={Image} alt='image' />
                         <h5>Ayodeje</h5>
                         <img src={ArrowDown} alt='arrow-down' />
@@ -44,7 +44,7 @@ const Navbar:React.FC = () => {
             
         </ul>
 
-            <button className='mobile-menu-icon'
+            <button className={styles.mobileMenuIcon}
             onClick={() => setIsMobile(!isMobile)}
             >
                 {isMobile ? ( <i><CloseIcon/></i> ) : ( <i><FormatListBulletedIcon/></i>)}
