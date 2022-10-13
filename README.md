@@ -56,6 +56,11 @@ $ yarn run start:dev
 - node
 - npm
 
+## Login Details
+
+Email: lendsqrfetest@gmail.com
+Password: 12345
+
 ## Swagger docs
 
 <!--## Test-->
