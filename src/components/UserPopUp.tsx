@@ -1,6 +1,7 @@
-import React from 'react'
-import '../styles/UserPopUp.scss'
-import { Stack, List, ListItem, } from '@mui/material'
+import React from 'react';
+import '../styles/UserPopUp.scss';
+
+import { Stack } from '@mui/material';
 import { MORE } from "../testdata";
 
 

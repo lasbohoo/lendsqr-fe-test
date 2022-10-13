@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import { Navbar, SideBar, UserCards, Filter, UserPopUp } from '../components'
-import '../styles/Users.scss'
-import { Stack } from '@mui/material'
-import { Table, TableBody, TableCell, Typography, TableHead, TableRow, Popover, TablePagination, Grid } from '@mui/material'
+import React, { useState, useEffect } from 'react';
+import '../styles/Users.scss';
+
+import { Navbar, SideBar, UserCards, Filter, UserPopUp } from '../components';
+
+import { Stack, Table, TableBody, TableCell, Typography, TableHead, TableRow, Popover, TablePagination, Grid } from '@mui/material';
 import { tableCellClasses } from '@mui/material/TableCell';
 import { styled } from '@mui/material/styles';
 import { HEADER } from "../testdata";
-import { addDataToLocalStorage } from '../data'
+import { addDataToLocalStorage } from '../data';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { createTheme } from '@mui/material/styles';

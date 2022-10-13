@@ -1,7 +1,8 @@
-import React from 'react'
-import { Union, Pablo } from '../assets'
-import '../styles/Login.scss'
-// import { Link, useNavigate } from "react-router-dom";
+import React from 'react';
+import { Union, Pablo } from '../assets';
+
+import '../styles/Login.scss';
+
 
 const Login:React.FC = () => {
   return (

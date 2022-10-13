@@ -1,8 +1,11 @@
+import React from 'react';
+import '../styles/UserDetails.scss';
+
 import { ArrowBack, ProfilePic, FilledStar, OutlinedStar } from '../assets';
-import { Stack, Box, Typography,Tabs, Tab  } from '@mui/material'
-import React from 'react'
-import { Navbar, SideBar, UserInfo } from '../components'
-import '../styles/UserDetails.scss'
+import { Stack, Box, Typography,Tabs, Tab  } from '@mui/material';
+
+import { Navbar, SideBar, UserInfo } from '../components';
+
 
 
 

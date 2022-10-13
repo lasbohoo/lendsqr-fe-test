@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/Sidebar.scss'
+import React from 'react';
+import '../styles/Sidebar.scss';
 
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import HouseIcon from '@mui/icons-material/House';

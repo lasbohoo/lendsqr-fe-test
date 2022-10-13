@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import '../styles/Navbar.scss';
+
 import { Union, Search, Info, Image, ArrowDown } from '../assets';
 import { Avatar } from '@mui/material';
 import { Link } from  "react-router-dom";
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import CloseIcon from '@mui/icons-material/Close';
-import '../styles/Navbar.scss'
+
+
 
 const Navbar:React.FC = () => {
 

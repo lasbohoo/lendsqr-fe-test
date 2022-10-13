@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/Filter.scss'
+import React from 'react';
+import '../styles/Filter.scss';
 
 import { Box,InputLabel,MenuItem,FormControl,Stack }from '@mui/material';
 import Select, { SelectChangeEvent } from '@mui/material/Select';

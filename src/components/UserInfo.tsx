@@ -1,6 +1,7 @@
-import { Stack, Divider  } from '@mui/material'
-import React from 'react'
-import '../styles/UserInfo.scss'
+import React from 'react';
+import '../styles/UserInfo.scss';
+
+import { Stack, Divider  } from '@mui/material';
 
 const UserInfo:React.FC = () => {
   return (

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { AllUsers, ActiveUsers, LoanUsers, SavingUsers } from '../assets'
 
 
