@@ -1,7 +1,9 @@
 import React from 'react';
-import { Union, Pablo } from '../assets';
 
 import '../styles/Login.scss';
+
+import { Union, Pablo } from '../assets';
+
 
 
 const Login:React.FC = () => {

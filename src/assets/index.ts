@@ -1,4 +1,4 @@
-import { Cancel, Circle, Dashboard } from './../../node_modules/@mui/icons-material/index.d';
+
 import Union from "./images/union.svg";
 import Pablo from "./images/pablo.svg";
 import Search from "./images/search.svg";
