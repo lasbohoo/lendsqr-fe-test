@@ -67,7 +67,7 @@ const UserDetails:React.FC = () => {
             </div>
             <div className={styles.mainContainer}>
                 <div className={styles.wrapper}>
-                    <Link to='/users'><i><img src={ArrowBack} alt='back' /></i><span>Back to Users</span></Link>
+                    <Link className={styles.a} to='/users'><i><img src={ArrowBack} alt='back' /></i><span>Back to Users</span></Link>
                     <Stack direction='row' style={{ justifyContent:'space-between', width:'1037px' }}>
                         <h4>User Details</h4>
                         <div className={styles.btnWrapper}>

@@ -12,7 +12,7 @@ const UserPopUp:React.FC = () => {
         <Stack className={styles.viewBox}>
         {MORE.map((more:any, index:any) => {
             return (
-                <Link to={more.path} className={styles.paper} key={index}>
+                <Link to={more.path} className={`${styles.paper} ${styles.a}`} key={index}>
                     <span className={styles.icon}>
                         {more.icon} 
                     </span>
