@@ -194,15 +194,18 @@ export const HEADER = [
 export const MORE = [
     {
         icon:<img src={View} />,
-        text:"View Details"
+        text:"View Details",
+        path:'/user/1'
     },
     
     {
         icon:<img src={Blacklist} />,
-        text:"Activate User"
+        text:"Activate User",
+        path:'#'
     },
     {
         icon:<img src={Active} />,
-        text:"Blacklist User"
+        text:"Blacklist User",
+        path:'#'
     },
 ]

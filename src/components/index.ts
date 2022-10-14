@@ -1,4 +1,5 @@
 export { default as Navbar } from "./Navbar"
+export { default as Fallback } from "./Fallback"
 export { default as SideBar } from "./SideBar"
 export { default as UserCards } from "./UserCards"
 export { default as Filter } from "./Filter"

@@ -5,6 +5,7 @@ import { ArrowBack, ProfilePic, FilledStar, OutlinedStar } from '../assets';
 import { Stack, Box, Typography,Tabs, Tab  } from '@mui/material';
 
 import { Navbar, SideBar, UserInfo } from '../components';
+import { Link } from 'react-router-dom';
 
 
 
@@ -66,7 +67,7 @@ const UserDetails:React.FC = () => {
             </div>
             <div className={styles.mainContainer}>
                 <div className={styles.wrapper}>
-                    <i><img src={ArrowBack} alt='back' /></i><span>Back to Users</span>
+                    <Link to='/users'><i><img src={ArrowBack} alt='back' /></i><span>Back to Users</span></Link>
                     <Stack direction='row' style={{ justifyContent:'space-between', width:'1037px' }}>
                         <h4>User Details</h4>
                         <div className={styles.btnWrapper}>
