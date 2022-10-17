@@ -18,7 +18,7 @@ import PercentOutlinedIcon from '@mui/icons-material/PercentOutlined';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 
 
-import { Circles,Fees,Service,Active,View,Blacklist } from '../src/assets';
+import { Circles,Fees,Service,Active,View,Blacklist,ActiveUsers,AllUsers,LoanUsers,SavingUsers } from '../src/assets';
 
 import styles from './styles/sidebar.module.scss'
 
@@ -28,53 +28,53 @@ export const CUSTOMERS = [
     {
         name:'Users',
         image:<GroupIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'       
     },
 
     {
         name:'Guarantors',
         image:<GroupsIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'       
     },
 
     {
         name:'Loans',
         image:<img src={Circles}/>, 
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'      
     },
 
     {
         name:'Decision Models',
         image:<HandshakeOutlinedIcon/>,   
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'    
     },
 
     {
         name:'Savings',
         image:<SavingsOutlinedIcon/>,   
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'    
     },
     {
         name:'Loan Requests',
         image:<VolunteerActivismIcon/>,  
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'    
     },
     {
         name:'Whitelist',
         image:<GroupAddIcon/>,  
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'     
     },
     {
         name:'Karma',
         image:<PersonRemoveIcon/>,  
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'     
     },
 
@@ -84,63 +84,63 @@ export const BUSINESSES = [
     {
         name:'Organization',
         image:<BusinessCenterIcon />,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Loan Products',
         image:<VolunteerActivismIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Savings Products',
         image:<SavingsOutlinedIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Fees and Charges',
         image:<img src={Fees}/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Transactions',
         image:<AccountBalanceWalletOutlinedIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Services',
         image:<img src={Service}/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Service Account',
         image:<ManageAccountsIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Settlements',
         image:<ReceiptLongIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Reports',
         image:<SignalCellularAltIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
@@ -150,20 +150,20 @@ export const SETTINGS = [
     {
         name:'Preferences',
         image:<TuneOutlinedIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
     {
         name:'Fees and Pricing',
         image:<PercentOutlinedIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
     },
     {
         name:'Audit Logs',
         image:<AssignmentIcon/>,
-        cName: `${styles.navText}`,
+        cName: `${styles.menuItem}`,
         path:'#'
 
     },
@@ -207,5 +207,29 @@ export const MORE = [
         icon:<img src={Active} />,
         text:"Blacklist User",
         path:'#'
+    },
+]
+
+
+export const CARD = [
+    {
+        img:<img src={AllUsers} alt='all-users'/>,
+        text:"Users",
+        amount:"2,453"
+    },
+    {
+        img:<img src={ActiveUsers} alt='all-users'/>,
+        text:"Active Users",
+        amount:"2,453"
+    },
+    {
+        img:<img src={LoanUsers} alt='all-users'/>,
+        text:"Users with Loans",
+        amount:"12,453"
+    },
+    {
+        img:<img src={SavingUsers} alt='all-users'/>,
+        text:"Users with Savings",
+        amount:"102,453"
     },
 ]

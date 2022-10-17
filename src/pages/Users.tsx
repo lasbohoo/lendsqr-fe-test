@@ -46,6 +46,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   '&:nth-of-type(odd)': {
     backgroundColor: theme.palette.common.white,
+    
   },
   // hide last border
   '&:last-child td, &:last-child th': {
@@ -109,7 +110,7 @@ const Users:React.FC = () => {
     <>
       <Navbar/>
     
-      <Stack direction='row' style={{ background:'#E5E5E5', width:'100%', display:'flex', flexDirection:'row' }}>     
+      <Stack direction='row' style={{ background:'#E5E5E5'}}>     
          
             <SideBar />
         
@@ -120,22 +121,22 @@ const Users:React.FC = () => {
                   <UserCards />
                 </div>
 
-                <Table aria-label="collapsible table" className={styles.tb}>
-                  <TableHead className={styles.th}>
-                    <TableRow>
+                <Table aria-label="collapsible table" className={styles.table}>
+                  <TableHead className={styles.thead}>
+                    <TableRow className={styles.tr}>
                     {HEADER?.map((header:any, index:any) => (
-                      <StyledTableCell key={index}>
-                        <Grid container>
-                          <Grid item lg={10}>
+                      <StyledTableCell key={index} className={styles.tc}>
+                        <div className={styles.tableContainer}>
+                          <div className={styles.tableHeader}>
                             {header}
-                          </Grid>
+                          </div>
                           <PopupState variant="popover" popupId="demo-popup-popover">
                             {(popupState: any) => (
                               <div>
                                 
-                                <Grid item lg={2}>
+                                <div className={styles.tableIcon}>
                                 <FilterListIcon  {...bindTrigger(popupState)}/>
-                                </Grid>
+                                </div>
                                 <Popover
                                   {...bindPopover(popupState)}
                                   anchorOrigin={{
@@ -152,34 +153,34 @@ const Users:React.FC = () => {
                               </div>
                             )}
                           </PopupState>     
-                        </Grid>
+                        </div>
                       </StyledTableCell>
                       ))}
                     </TableRow>
                     
                   </TableHead>
-                  <TableBody>
+                  <TableBody className={styles.tbody}>
                     {user?.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)?.map((user:any, index:any) => (
-                      <StyledTableRow key={index}>
-                        <StyledTableCell>
+                      <StyledTableRow key={index} className={styles.tr}>
+                        <StyledTableCell className={styles.td}>
                           {user.orgName}
                         </StyledTableCell>
-                        <StyledTableCell>
+                        <StyledTableCell className={styles.td}>
                           {user.userName}
                         </StyledTableCell>
-                        <StyledTableCell>
+                        <StyledTableCell className={styles.td}>
                           {user.email}
                         </StyledTableCell>
-                        <StyledTableCell>
+                        <StyledTableCell className={styles.td}>
                           {user.phoneNumber}
                         </StyledTableCell>
-                        <StyledTableCell>
+                        <StyledTableCell className={styles.td}>
                           {user.createdAt}
                         </StyledTableCell>
-                        <StyledTableCell>
+                        <StyledTableCell className={styles.td}>
                           {user.status}
                         </StyledTableCell>
-                        <StyledTableCell>
+                        <StyledTableCell className={styles.td}>
                         <PopupState variant="popover" popupId="demo-popup-popover">
                             {(popupState: any) => (
                               <div>

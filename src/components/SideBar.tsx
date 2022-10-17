@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/sidebar.module.scss';
 
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
@@ -11,6 +11,16 @@ import { CUSTOMERS, BUSINESSES, SETTINGS } from "../testdata";
 
 
 const SideBar:React.FC = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleClick = () => {
+        if(isOpen) {
+            setIsOpen(false);
+        } else {
+            setIsOpen(true);
+        }
+    }
     
   return (
         <div className={styles.sidebar}>
